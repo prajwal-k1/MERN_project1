@@ -1,0 +1,28 @@
+### Get all subscribers 
+GET http://127.0.0.1:3000/book
+
+### Get subscriber using id 
+GET http://127.0.0.1:3000/book/650826d0ea6526a4fc04e309
+
+### Create new subscriber 
+POST http://127.0.0.1:3000/book 
+Content-Type: application/json
+
+{
+    "title":"Book2", 
+    "author": "Author2",
+    "publishYear": 2021
+}
+
+### Update Subscriber 
+PATCH  http://127.0.0.1:3000/book/650826d0ea6526a4fc04e309
+Content-Type: application/json
+
+{
+    "title":"Book2", 
+    "author": "Author1",
+    "publishYear": 2021
+}
+
+### Delete Subscriber 
+DELETE http://127.0.0.1:3000/book/650826d0ea6526a4fc04e309
